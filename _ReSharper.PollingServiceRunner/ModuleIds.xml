@@ -1,0 +1,9 @@
+<Modules>
+  <Module PersistentId="03B2E05E-AD46-424E-AB06-F010C2DE7032" ModuleId="WindowsService" />
+  <Module PersistentId="45A25E5B-931C-4D09-ABA7-5A70C8244DDE" ModuleId="ConsoleHost" />
+  <Module PersistentId="EB7930ED-CB3F-43B4-BEAD-E83520D8C414" ModuleId="Engine" />
+  <Module PersistentId="d:Miscellaneous Files" ModuleId="log4net" />
+  <Module PersistentId="04003867-6083-4EF1-A805-11AB6D8AC717" ModuleId="PollingServiceCore" />
+  <Module PersistentId="1FB3D48D-65C5-4D36-A67C-C8D804D96195" ModuleId="ProcessOrderService" />
+  <Module PersistentId="A8EF2EE5-C260-4C00-877A-F846CAFB000E" ModuleId="ProcessInvoiceService" />
+</Modules>

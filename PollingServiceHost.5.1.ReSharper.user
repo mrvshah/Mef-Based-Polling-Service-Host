@@ -1,0 +1,129 @@
+<Configuration>
+  <SettingsComponent>
+    <string />
+    <integer />
+    <boolean>
+      <setting name="SolutionAnalysisEnabled">False</setting>
+    </boolean>
+  </SettingsComponent>
+  <CompletionStatisticsManager>
+    <ItemStatistics item="Default">
+      <Item value="Log" priority="2" />
+      <Item value="pollingServiceRunner" priority="0" />
+      <Item value="string" priority="2" />
+      <Item value="CanPauseAndContinue" priority="0" />
+      <Item value="true" priority="0" />
+      <Item value="public" priority="1" />
+      <Item value="var" priority="1" />
+      <Item value="new" priority="4" />
+      <Item value="ServicesProvider`0" priority="0" />
+      <Item value="return" priority="1" />
+      <Item value="Services" priority="0" />
+      <Item value="Thread`0" priority="1" />
+      <Item value="static" priority="0" />
+      <Item value="IPollingServiceRunner`0" priority="0" />
+      <Item value="pollingService" priority="0" />
+      <Item value="private" priority="0" />
+      <Item value="using" priority="1" />
+      <Item value="System" priority="0" />
+      <Item value="Linq" priority="0" />
+      <Item value="as" priority="0" />
+      <Item value="TimeSpan`0" priority="1" />
+      <Item value="int" priority="1" />
+      <Item value="TimeSpan" priority="1" />
+      <Item value="pollingInterval" priority="2" />
+      <Item value="virtual" priority="0" />
+      <Item value="PollingService`0" priority="0" />
+      <Item value="protected" priority="0" />
+      <Item value="sealed" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:log4net.ILog">
+      <Item value="Info`0" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Engine.IPollingServiceRunner">
+      <Item value="OnPause`0" priority="0" />
+      <Item value="OnContinue`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Utilities.Configuration.AppSettingsReader">
+      <Item value="Get`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Threading.Thread">
+      <Item value="CurrentThread" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Threading.Thread">
+      <Item value="Name" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@ProcessOrderService.Properties.Settings">
+      <Item value="Default" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:ProcessOrderService.Properties.Settings">
+      <Item value="PollingInterval" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Configuration.Configuration">
+      <Item value="AppSettings" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Configuration.AppSettingsSection">
+      <Item value="Settings" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Configuration.KeyValueConfigurationElement">
+      <Item value="Value" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Int32">
+      <Item value="Parse`0" priority="0" />
+    </ItemStatistics>
+  </CompletionStatisticsManager>
+  <RecentFiles>
+    <RecentFiles>
+      <File id="03B2E05E-AD46-424E-AB06-F010C2DE7032/f:App.config" caret="1078" fromTop="17" />
+      <File id="45A25E5B-931C-4D09-ABA7-5A70C8244DDE/f:App.config" caret="1143" fromTop="24" />
+      <File id="03B2E05E-AD46-424E-AB06-F010C2DE7032/f:Service.cs" caret="388" fromTop="11" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:IPollingServiceRunner.cs" caret="92" fromTop="5" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:ServiceExecutor.cs" caret="272" fromTop="11" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="2723" fromTop="13" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:ServicesProvider.cs" caret="1087" fromTop="12" />
+      <File id="45A25E5B-931C-4D09-ABA7-5A70C8244DDE/f:Program.cs" caret="161" fromTop="7" />
+      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:app.config" caret="183" fromTop="6" />
+      <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/f:app.config" caret="0" fromTop="0" />
+      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:ProcessOrder.cs" caret="234" fromTop="10" />
+      <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/f:ProcessInvoice.cs" caret="76" fromTop="3" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="2775" fromTop="43" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="2804" fromTop="7" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:ServiceExecutor.cs" caret="1008" fromTop="34" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:ServiceExecutor.cs" caret="272" fromTop="11" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="2337" fromTop="17" />
+      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:ProcessOrder.cs" caret="735" fromTop="13" />
+      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:ProcessOrder.cs" caret="735" fromTop="13" />
+      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:ProcessOrder.cs" caret="735" fromTop="14" />
+      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:ProcessOrder.cs" caret="303" fromTop="17" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:ServicesProvider.cs" caret="518" fromTop="12" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:ServicesProvider.cs" caret="518" fromTop="17" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:ServicesProvider.cs" caret="983" fromTop="28" />
+      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:app.config" caret="99" fromTop="3" />
+      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:ProcessOrder.cs" caret="13" fromTop="0" />
+      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:ProcessOrder.cs" caret="577" fromTop="13" />
+      <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/f:ProcessInvoice.cs" caret="329" fromTop="6" />
+      <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/f:ProcessInvoice.cs" caret="166" fromTop="0" />
+      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:ProcessOrder.cs" caret="238" fromTop="9" />
+      <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/f:ProcessInvoice.cs" caret="596" fromTop="18" />
+      <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/f:ProcessInvoice.cs" caret="251" fromTop="11" />
+      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:ProcessOrder.cs" caret="404" fromTop="16" />
+      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:ProcessOrder.cs" caret="261" fromTop="11" />
+      <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/f:ProcessInvoice.cs" caret="76" fromTop="3" />
+    </RecentEdits>
+  </RecentFiles>
+  <NAntValidationSettings>
+    <NAntPath value="" />
+  </NAntValidationSettings>
+  <UnitTestRunner>
+    <Providers />
+  </UnitTestRunner>
+  <UnitTestRunnerNUnit>
+    <NUnitInstallDir>C:\Program Files\NUnit 2.5.9\bin\net-2.0\</NUnitInstallDir>
+    <UseAddins>Never</UseAddins>
+  </UnitTestRunnerNUnit>
+</Configuration>
