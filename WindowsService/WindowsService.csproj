@@ -36,6 +36,9 @@
     <DocumentationFile>bin\Release\WindowsService.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Common, Version=3.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Utilities.3.2.0.1\lib\net40\Common.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
     </Reference>
@@ -49,6 +52,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Xml" />
+    <Reference Include="Utilities, Version=3.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Utilities.3.2.0.1\lib\net40\Utilities.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ProjectInstaller.cs">
@@ -72,6 +78,10 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{04003867-6083-4EF1-A805-11AB6D8AC717}</Project>
+      <Name>Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Engine\Engine.csproj">
       <Project>{EB7930ED-CB3F-43B4-BEAD-E83520D8C414}</Project>
       <Name>Engine</Name>

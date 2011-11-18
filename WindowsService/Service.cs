@@ -1,4 +1,5 @@
 ﻿using System.ServiceProcess;
+using Core;
 using Engine;
 using log4net.Config;
 
@@ -13,7 +14,8 @@ namespace WindowsService
 			XmlConfigurator.Configure();
 
 			InitializeComponent();
-			pollingServiceRunner = new PollingServiceRunner();
+
+			pollingServiceRunner = new PollingServiceRunner(StartupValidationProvider.GetAllValidators());
 
 			CanPauseAndContinue = true;
 		}

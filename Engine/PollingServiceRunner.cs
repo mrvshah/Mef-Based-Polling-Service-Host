@@ -6,7 +6,9 @@ using System.Threading;
 using System.Threading.Tasks;
 using Core;
 using log4net;
+using Utilities.AppStartupValidation;
 using Utilities.Configuration;
+using Utilities.Mef;
 using Utilities.Threading;
 
 namespace Engine
@@ -20,6 +22,20 @@ namespace Engine
 
 		private readonly IList<string> currentlyRunningServices = new List<string>();
 		private CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
+
+		public PollingServiceRunner()
+			: this(null)
+		{
+
+		}
+
+		public PollingServiceRunner(IEnumerable<IValidator> validators)
+		{
+			if (validators != null)
+			{
+				AppStartupValidationExecutor.ValidateAll(validators);
+			}
+		}
 
 		/// <summary>
 		/// Executes when a Start command is sent to the service by the Service Control Manager (SCM) or when the operating system starts (for a service that starts automatically). Specifies actions to take when the service starts.
@@ -84,7 +100,7 @@ namespace Engine
 				{
 					Log.Info("Looking into directory for live services");
 
-					var services = new MefServicesProvider().GetServices();
+					var services = new ImportManyFromDirectory<IPollingService>().Get(AppSettingsReader.Get<string>(AppSettingsKeys.LIVE_SERVICES_DIRECTORY));
 
 					// only run new service found
 					var newServices = services.Where(s => !currentlyRunningServices.Contains(s.Name));
@@ -107,7 +123,7 @@ namespace Engine
 						Log.Info("There is no new service to run");
 					}
 
-					Thread.Sleep(new TimeSpan(0, 0, 0, AppSettingsReader.Get<int>("LookUpServicePollInterval")));
+					Thread.Sleep(new TimeSpan(0, 0, 0, AppSettingsReader.Get<int>(AppSettingsKeys.LOOK_UP_SERVICE_POLL_INTERVAL)));
 				}
 
 				Log.Info("Cancellation request found in worker thread");

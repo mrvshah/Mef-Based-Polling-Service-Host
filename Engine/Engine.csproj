@@ -32,8 +32,9 @@
     <DocumentationFile>bin\Release\Engine.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Common">
-      <HintPath>..\packages\Utilities.3.1.0.0\lib\net40\Common.dll</HintPath>
+    <Reference Include="Common, Version=3.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Utilities.3.2.0.1\lib\net40\Common.dll</HintPath>
     </Reference>
     <Reference Include="log4net">
       <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
@@ -48,8 +49,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Utilities">
-      <HintPath>..\packages\Utilities.3.1.0.0\lib\net40\Utilities.dll</HintPath>
+    <Reference Include="Utilities, Version=3.2.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Utilities.3.2.0.1\lib\net40\Utilities.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -57,7 +59,6 @@
     <Compile Include="PollingServiceRunner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiceExecutor.cs" />
-    <Compile Include="MefServicesProvider.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

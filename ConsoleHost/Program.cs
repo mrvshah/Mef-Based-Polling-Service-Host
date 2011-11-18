@@ -1,4 +1,5 @@
 ﻿using System;
+using Core;
 using Engine;
 using log4net.Config;
 
@@ -10,7 +11,7 @@ namespace ConsoleHost
 		{
 			XmlConfigurator.Configure();
 
-			var pollingServiceRunner = new PollingServiceRunner();
+			var pollingServiceRunner = new PollingServiceRunner(StartupValidationProvider.GetAllValidators());
 			pollingServiceRunner.OnStart();
 			Console.WriteLine("Service started");
 			Console.WriteLine("Press enter to stop the service");
