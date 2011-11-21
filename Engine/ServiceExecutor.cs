@@ -1,8 +1,8 @@
 using System;
-using System.Reflection;
 using System.Threading;
 using Core;
 using log4net;
+using Utilities.Log4Net;
 using Utilities.Threading;
 
 namespace Engine
@@ -12,7 +12,7 @@ namespace Engine
 	/// </summary>
 	public class ServiceExecutor
 	{
-		private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+		private static readonly ILog log = LogWrapper.Instance.Get<ServiceExecutor>();
 
 		/// <summary>
 		/// Executes a service
@@ -27,18 +27,18 @@ namespace Engine
 
 				while (!token.IsCancellationRequested)
 				{
-					Log.Info(string.Format("Executing service {0} at {1}", pollingService.Name, DateTime.UtcNow));
+					log.Info(string.Format("Executing service {0} at {1}", pollingService.Name, DateTime.UtcNow));
 					pollingService.Execute();
 					Thread.Sleep(pollingService.PollInterval);
 				}
 
-				Log.Info(string.Format("Cancellation request found in {0} thread", Thread.CurrentThread.Name));
+				log.Info(string.Format("Cancellation request found in {0} thread", Thread.CurrentThread.Name));
 				token.ThrowIfCancellationRequested();
 			}
 			catch (Exception ex)
 			{
-				Log.Info("Exception in Service thread");
-				Log.Error(ex);
+				log.Info("Exception in Service thread");
+				log.Error(ex);
 			}
 		}
 	}

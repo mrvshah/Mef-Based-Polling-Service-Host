@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using Core;
 using log4net;
 using Utilities.AppStartupValidation;
 using Utilities.Configuration;
+using Utilities.Log4Net;
 using Utilities.Mef;
 using Utilities.Threading;
 
@@ -18,17 +18,25 @@ namespace Engine
 	/// </summary>
 	public class PollingServiceRunner : IPollingServiceRunner
 	{
-		private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+		//private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+		private static readonly ILog log = LogWrapper.Instance.Get<PollingServiceRunner>();
 
 		private readonly IList<string> currentlyRunningServices = new List<string>();
 		private CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
 
+		/// <summary>
+		/// Initializes a new instance of the <see cref="PollingServiceRunner"/> class
+		/// </summary>
 		public PollingServiceRunner()
 			: this(null)
 		{
 
 		}
 
+		/// <summary>
+		/// Initializes a new instance of the <see cref="PollingServiceRunner"/> class
+		/// </summary>
+		/// <param name="validators">The validators.</param>
 		public PollingServiceRunner(IEnumerable<IValidator> validators)
 		{
 			if (validators != null)
@@ -44,13 +52,13 @@ namespace Engine
 		{
 			Thread.CurrentThread.TrySetName("Main");
 
-			Log.Info("Starting service");
+			log.Info("Starting service");
 
 			var token = cancellationTokenSource.Token;
 
 			Task.Factory.StartNew(() => LookUpServicesAndStart(token), token);
 
-			Log.Info("Service started");
+			log.Info("Service started");
 		}
 
 		/// <summary>
@@ -58,8 +66,8 @@ namespace Engine
 		/// </summary>
 		public void OnStop()
 		{
-			Log.Info("Stopping service");
-			Log.Info("Service stopped");
+			log.Info("Stopping service");
+			log.Info("Service stopped");
 		}
 
 		/// <summary>
@@ -67,9 +75,9 @@ namespace Engine
 		/// </summary>
 		public void OnPause()
 		{
-			Log.Info("Pausing service");
+			log.Info("Pausing service");
 			cancellationTokenSource.Cancel();
-			Log.Info("Service paused");
+			log.Info("Service paused");
 		}
 
 		/// <summary>
@@ -77,11 +85,11 @@ namespace Engine
 		/// </summary>
 		public void OnContinue()
 		{
-			Log.Info("Continuing service");
+			log.Info("Continuing service");
 			cancellationTokenSource = new CancellationTokenSource(); // reset cancellation token so that new threads can be started
 			currentlyRunningServices.Clear(); // repopulate list of services as this is a fresh start
 			OnStart();
-			Log.Info("Service continued");
+			log.Info("Service continued");
 		}
 
 		/// <summary>
@@ -94,11 +102,11 @@ namespace Engine
 			{
 				Thread.CurrentThread.TrySetName("Worker");
 
-				Log.Info("Starting Worker thread");
+				log.Info("Starting Worker thread");
 
 				while (!token.IsCancellationRequested)
 				{
-					Log.Info("Looking into directory for live services");
+					log.Info("Looking into directory for live services");
 
 					var services = new ImportManyFromDirectory<IPollingService>().Get(AppSettingsReader.Get<string>(AppSettingsKeys.LIVE_SERVICES_DIRECTORY));
 
@@ -111,7 +119,7 @@ namespace Engine
 						{
 							IPollingService pollingService = service;
 
-							Log.Info(string.Format("Starting service - {0}", pollingService));
+							log.Info(string.Format("Starting service - {0}", pollingService));
 
 							Task.Factory.StartNew(() => ServiceExecutor.Execute(pollingService, token), token);
 
@@ -120,19 +128,19 @@ namespace Engine
 					}
 					else
 					{
-						Log.Info("There is no new service to run");
+						log.Info("There is no new service to run");
 					}
 
 					Thread.Sleep(new TimeSpan(0, 0, 0, AppSettingsReader.Get<int>(AppSettingsKeys.LOOK_UP_SERVICE_POLL_INTERVAL)));
 				}
 
-				Log.Info("Cancellation request found in worker thread");
+				log.Info("Cancellation request found in worker thread");
 				token.ThrowIfCancellationRequested();
 			}
 			catch (Exception ex)
 			{
-				Log.Info("Exception in Worker thread");
-				Log.Error(ex);
+				log.Info("Exception in Worker thread");
+				log.Error(ex);
 			}
 		}
 	}

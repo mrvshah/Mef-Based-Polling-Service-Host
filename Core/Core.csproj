@@ -32,8 +32,14 @@
     <DocumentationFile>bin\Release\Core.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Common">
-      <HintPath>..\packages\Utilities.3.2.0.1\lib\net40\Common.dll</HintPath>
+    <Reference Include="Common.Logging">
+      <HintPath>..\packages\Common.Logging.1.2.0\lib\1.0\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz">
+      <HintPath>..\packages\Quartz.1.0.3\lib\3.5\Quartz.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
@@ -44,8 +50,13 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Utilities">
-      <HintPath>..\packages\Utilities.3.2.0.1\lib\net40\Utilities.dll</HintPath>
+    <Reference Include="Utilities, Version=3.3.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Utilities.3.3.0.2\lib\net40\Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Utilities.Common, Version=3.3.0.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Utilities.3.3.0.2\lib\net40\Utilities.Common.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

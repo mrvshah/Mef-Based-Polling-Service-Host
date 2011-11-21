@@ -3,7 +3,7 @@
 namespace Core
 {
 	/// <summary>
-	/// Defines a scheduler for a service
+	/// Defines scheduler for a service
 	/// </summary>
 	public interface IScheduler
 	{

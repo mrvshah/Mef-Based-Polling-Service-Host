@@ -9,7 +9,7 @@ namespace ConsoleHost
 	{
 		static void Main()
 		{
-			XmlConfigurator.Configure();
+			//XmlConfigurator.Configure();
 
 			var pollingServiceRunner = new PollingServiceRunner(StartupValidationProvider.GetAllValidators());
 			pollingServiceRunner.OnStart();

@@ -8,22 +8,22 @@
   </SettingsComponent>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="Log" priority="2" />
+      <Item value="Log" priority="3" />
       <Item value="pollingServiceRunner" priority="0" />
-      <Item value="string" priority="4" />
+      <Item value="string" priority="7" />
       <Item value="CanPauseAndContinue" priority="0" />
       <Item value="true" priority="0" />
-      <Item value="public" priority="1" />
+      <Item value="public" priority="5" />
       <Item value="var" priority="2" />
-      <Item value="new" priority="4" />
+      <Item value="new" priority="7" />
       <Item value="ServicesProvider`0" priority="0" />
-      <Item value="return" priority="1" />
+      <Item value="return" priority="2" />
       <Item value="Services" priority="0" />
       <Item value="Thread`0" priority="1" />
-      <Item value="static" priority="0" />
+      <Item value="static" priority="2" />
       <Item value="IPollingServiceRunner`0" priority="0" />
       <Item value="pollingService" priority="1" />
-      <Item value="private" priority="0" />
+      <Item value="private" priority="1" />
       <Item value="using" priority="2" />
       <Item value="System" priority="0" />
       <Item value="Linq" priority="0" />
@@ -36,16 +36,37 @@
       <Item value="PollingService`0" priority="0" />
       <Item value="protected" priority="0" />
       <Item value="sealed" priority="1" />
-      <Item value="ctor" priority="0" />
+      <Item value="ctor" priority="3" />
       <Item value="PollingInterval" priority="0" />
       <Item value="base" priority="0" />
-      <Item value="IPollingService`0" priority="2" />
+      <Item value="IPollingService`0" priority="3" />
       <Item value="Utilities" priority="1" />
       <Item value="Configuration" priority="0" />
-      <Item value="AppSettingsReader`0" priority="0" />
+      <Item value="AppSettingsReader`0" priority="1" />
       <Item value="log" priority="0" />
       <Item value="directory" priority="1" />
       <Item value="Threading" priority="0" />
+      <Item value="Mef" priority="0" />
+      <Item value="ImportAllParts" priority="0" />
+      <Item value="ImportManyFromDirectory" priority="0" />
+      <Item value="List&lt;IValidator&gt;" priority="0" />
+      <Item value="AppSettingsValidator`0" priority="0" />
+      <Item value="appSettingsValidator" priority="1" />
+      <Item value="AppSettingsValidator" priority="0" />
+      <Item value="validators" priority="6" />
+      <Item value="AppStartupValidationExecutor`0" priority="1" />
+      <Item value="const" priority="1" />
+      <Item value="IEnumerable" priority="0" />
+      <Item value="if" priority="0" />
+      <Item value="null" priority="1" />
+      <Item value="StartupValidationProvider`0" priority="1" />
+      <Item value="this" priority="1" />
+      <Item value="AppSettingsKeys`0" priority="1" />
+      <Item value="readonly" priority="0" />
+      <Item value="ILog`0" priority="0" />
+      <Item value="PollingServiceRunner`0" priority="2" />
+      <Item value="LogWrapper" priority="0" />
+      <Item value="ServiceExecutor`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:log4net.ILog">
       <Item value="Info`0" priority="3" />
@@ -55,7 +76,7 @@
       <Item value="OnContinue`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Utilities.Configuration.AppSettingsReader">
-      <Item value="Get`1" priority="2" />
+      <Item value="Get`1" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.String">
       <Item value="Format`0" priority="2" />
@@ -91,59 +112,90 @@
     <ItemStatistics item="Qualified:Core.IPollingService">
       <Item value="Execute`0" priority="0" />
     </ItemStatistics>
+    <ItemStatistics item="Qualified:Utilities.Mef.ImportAllParts`1">
+      <Item value="GetHashCode`0" priority="0" />
+      <Item value="GetServices`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IList`1">
+      <Item value="Add`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Utilities.AppStartupValidation.AppStartupValidationExecutor">
+      <Item value="ValidateAll`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Collections.Generic.IEnumerable`1">
+      <Item value="Count`1" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Core.StartupValidationProvider">
+      <Item value="GetAllValidators`0" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Core.AppSettingsKeys">
+      <Item value="LIVE_SERVICES_DIRECTORY" priority="0" />
+      <Item value="LOOK_UP_SERVICE_POLL_INTERVAL" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@Utilities.Log4Net.LogWrapper`1">
+      <Item value="Logger" priority="1" />
+      <Item value="Instance" priority="2" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Utilities.Log4Net.LogWrapper`1">
+      <Item value="Logger" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:Utilities.Log4Net.LogWrapper">
+      <Item value="Get`1" priority="1" />
+    </ItemStatistics>
   </CompletionStatisticsManager>
   <RecentFiles>
     <RecentFiles>
       <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:app.config" caret="122" fromTop="4" />
       <File id="04003867-6083-4EF1-A805-11AB6D8AC717/f:ICommand.cs" caret="0" fromTop="0" />
-      <File id="04003867-6083-4EF1-A805-11AB6D8AC717/f:IScheduler.cs" caret="0" fromTop="0" />
-      <File id="04003867-6083-4EF1-A805-11AB6D8AC717/f:IPollingService.cs" caret="0" fromTop="0" />
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:packages.config" caret="97" fromTop="3" />
-      <File id="03B2E05E-AD46-424E-AB06-F010C2DE7032/f:Service.cs" caret="0" fromTop="0" />
       <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/d:Properties/f:AssemblyInfo.cs" caret="464" fromTop="10" />
-      <File id="45A25E5B-931C-4D09-ABA7-5A70C8244DDE/f:Program.cs" caret="0" fromTop="0" />
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:ServiceExecutor.cs" caret="744" fromTop="15" />
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:MefServicesProvider.cs" caret="0" fromTop="0" />
-      <File id="04003867-6083-4EF1-A805-11AB6D8AC717/f:PollingService.cs" caret="920" fromTop="18" />
-      <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/f:ProcessInvoice.cs" caret="0" fromTop="0" />
-      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:ProcessOrder.cs" caret="0" fromTop="0" />
       <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/f:app.config" caret="102" fromTop="3" />
-      <File id="45A25E5B-931C-4D09-ABA7-5A70C8244DDE/f:App.config" caret="1582" fromTop="34" />
-      <File id="03B2E05E-AD46-424E-AB06-F010C2DE7032/f:App.config" caret="1241" fromTop="31" />
       <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:IPollingServiceRunner.cs" caret="0" fromTop="0" />
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="0" fromTop="0" />
+      <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/f:ProcessInvoice.cs" caret="426" fromTop="12" />
+      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:ProcessOrder.cs" caret="138" fromTop="7" />
+      <File id="04003867-6083-4EF1-A805-11AB6D8AC717/f:IPollingService.cs" caret="183" fromTop="8" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:packages.config" caret="0" fromTop="0" />
+      <File id="03B2E05E-AD46-424E-AB06-F010C2DE7032/f:Service.cs" caret="0" fromTop="0" />
+      <File id="04003867-6083-4EF1-A805-11AB6D8AC717/f:StartupValidationProvider.cs" caret="499" fromTop="15" />
+      <File id="04003867-6083-4EF1-A805-11AB6D8AC717/f:AppSettingsKeys.cs" caret="217" fromTop="7" />
+      <File id="04003867-6083-4EF1-A805-11AB6D8AC717/f:IScheduler.cs" caret="128" fromTop="7" />
+      <File id="04003867-6083-4EF1-A805-11AB6D8AC717/f:PollingService.cs" caret="0" fromTop="0" />
+      <File id="45A25E5B-931C-4D09-ABA7-5A70C8244DDE/f:Program.cs" caret="174" fromTop="11" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:ServiceExecutor.cs" caret="0" fromTop="0" />
+      <File id="03B2E05E-AD46-424E-AB06-F010C2DE7032/f:App.config" caret="928" fromTop="22" />
+      <File id="45A25E5B-931C-4D09-ABA7-5A70C8244DDE/f:App.config" caret="1306" fromTop="27" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="572" fromTop="21" />
     </RecentFiles>
     <RecentEdits>
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="1233" fromTop="23" />
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:packages.config" caret="97" fromTop="3" />
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="238" fromTop="8" />
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="964" fromTop="21" />
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="2641" fromTop="16" />
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="1524" fromTop="18" />
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="1853" fromTop="25" />
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="3795" fromTop="11" />
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="2512" fromTop="13" />
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:ServiceExecutor.cs" caret="196" fromTop="0" />
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:ServiceExecutor.cs" caret="525" fromTop="10" />
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:ServiceExecutor.cs" caret="1086" fromTop="24" />
-      <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/f:ProcessInvoice.cs" caret="109" fromTop="6" />
-      <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/f:ProcessInvoice.cs" caret="220" fromTop="13" />
-      <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/f:ProcessInvoice.cs" caret="336" fromTop="18" />
-      <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/f:ProcessInvoice.cs" caret="569" fromTop="24" />
-      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:ProcessOrder.cs" caret="105" fromTop="6" />
-      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:ProcessOrder.cs" caret="252" fromTop="13" />
-      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:ProcessOrder.cs" caret="328" fromTop="18" />
-      <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/d:Properties/f:AssemblyInfo.cs" caret="575" fromTop="10" />
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:ServiceExecutor.cs" caret="854" fromTop="18" />
-      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:ProcessOrder.cs" caret="616" fromTop="28" />
-      <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/f:ProcessInvoice.cs" caret="631" fromTop="29" />
-      <File id="A8EF2EE5-C260-4C00-877A-F846CAFB000E/f:ProcessInvoice.cs" caret="0" fromTop="0" />
-      <File id="1FB3D48D-65C5-4D36-A67C-C8D804D96195/f:ProcessOrder.cs" caret="0" fromTop="0" />
-      <File id="04003867-6083-4EF1-A805-11AB6D8AC717/f:PollingService.cs" caret="897" fromTop="17" />
-      <File id="45A25E5B-931C-4D09-ABA7-5A70C8244DDE/f:App.config" caret="1170" fromTop="18" />
-      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="3594" fromTop="24" />
-      <File id="03B2E05E-AD46-424E-AB06-F010C2DE7032/f:App.config" caret="1599" fromTop="35" />
-      <File id="03B2E05E-AD46-424E-AB06-F010C2DE7032/f:App.config" caret="1241" fromTop="31" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="3102" fromTop="21" />
+      <File id="04003867-6083-4EF1-A805-11AB6D8AC717/f:PollingService.cs" caret="181" fromTop="9" />
+      <File id="03B2E05E-AD46-424E-AB06-F010C2DE7032/f:Service.cs" caret="454" fromTop="25" />
+      <File id="04003867-6083-4EF1-A805-11AB6D8AC717/f:AppSettingsKeys.cs" caret="127" fromTop="4" />
+      <File id="04003867-6083-4EF1-A805-11AB6D8AC717/f:StartupValidationProvider.cs" caret="208" fromTop="9" />
+      <File id="03B2E05E-AD46-424E-AB06-F010C2DE7032/f:Service.cs" caret="454" fromTop="12" />
+      <File id="04003867-6083-4EF1-A805-11AB6D8AC717/f:StartupValidationProvider.cs" caret="603" fromTop="20" />
+      <File id="03B2E05E-AD46-424E-AB06-F010C2DE7032/f:Service.cs" caret="411" fromTop="6" />
+      <File id="03B2E05E-AD46-424E-AB06-F010C2DE7032/f:Service.cs" caret="0" fromTop="0" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="869" fromTop="13" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="996" fromTop="13" />
+      <File id="04003867-6083-4EF1-A805-11AB6D8AC717/f:StartupValidationProvider.cs" caret="499" fromTop="15" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="4088" fromTop="17" />
+      <File id="04003867-6083-4EF1-A805-11AB6D8AC717/f:IScheduler.cs" caret="65" fromTop="5" />
+      <File id="04003867-6083-4EF1-A805-11AB6D8AC717/f:PollingService.cs" caret="974" fromTop="20" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="3282" fromTop="26" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="302" fromTop="12" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:ServiceExecutor.cs" caret="13" fromTop="0" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="68" fromTop="2" />
+      <File id="45A25E5B-931C-4D09-ABA7-5A70C8244DDE/f:Program.cs" caret="174" fromTop="11" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="958" fromTop="17" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:ServiceExecutor.cs" caret="332" fromTop="15" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:ServiceExecutor.cs" caret="577" fromTop="15" />
+      <File id="45A25E5B-931C-4D09-ABA7-5A70C8244DDE/f:App.config" caret="616" fromTop="15" />
+      <File id="45A25E5B-931C-4D09-ABA7-5A70C8244DDE/f:App.config" caret="650" fromTop="15" />
+      <File id="45A25E5B-931C-4D09-ABA7-5A70C8244DDE/f:App.config" caret="368" fromTop="9" />
+      <File id="03B2E05E-AD46-424E-AB06-F010C2DE7032/f:App.config" caret="928" fromTop="22" />
+      <File id="45A25E5B-931C-4D09-ABA7-5A70C8244DDE/f:App.config" caret="1306" fromTop="9" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="2951" fromTop="16" />
+      <File id="EB7930ED-CB3F-43B4-BEAD-E83520D8C414/f:PollingServiceRunner.cs" caret="601" fromTop="21" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

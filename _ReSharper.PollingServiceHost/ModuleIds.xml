@@ -6,5 +6,5 @@
   <Module PersistentId="A8EF2EE5-C260-4C00-877A-F846CAFB000E" ModuleId="ProcessInvoiceService" />
   <Module PersistentId="45A25E5B-931C-4D09-ABA7-5A70C8244DDE" ModuleId="ConsoleHost" />
   <Module PersistentId="d:Miscellaneous Files" ModuleId="System.ServiceProcess" />
-  <Module PersistentId="Utilities, Version=3.2.0.0, Culture=neutral" ModuleId="Utilities" />
+  <Module PersistentId="Utilities, Version=3.3.0.0, Culture=neutral" ModuleId="Utilities" />
 </Modules>
