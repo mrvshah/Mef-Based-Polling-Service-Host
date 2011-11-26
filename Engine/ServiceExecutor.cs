@@ -27,7 +27,7 @@ namespace Engine
 
 				while (!token.IsCancellationRequested)
 				{
-					log.Info(string.Format("Executing service {0} at {1}", pollingService.Name, DateTime.UtcNow));
+					log.Info(string.Format("Executing service {0}", pollingService.Name));
 					pollingService.Execute();
 					Thread.Sleep(pollingService.PollInterval);
 				}

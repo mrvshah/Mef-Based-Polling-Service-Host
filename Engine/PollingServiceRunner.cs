@@ -18,7 +18,6 @@ namespace Engine
 	/// </summary>
 	public class PollingServiceRunner : IPollingServiceRunner
 	{
-		//private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 		private static readonly ILog log = LogWrapper.Instance.Get<PollingServiceRunner>();
 
 		private readonly IList<string> currentlyRunningServices = new List<string>();
@@ -110,7 +109,7 @@ namespace Engine
 
 					var services = new ImportManyFromDirectory<IPollingService>().Get(AppSettingsReader.Get<string>(AppSettingsKeys.LIVE_SERVICES_DIRECTORY));
 
-					// only run new service found
+					// only run if new service is found
 					var newServices = services.Where(s => !currentlyRunningServices.Contains(s.Name));
 
 					if (services.Count() > 0 && newServices.Count() > 0)

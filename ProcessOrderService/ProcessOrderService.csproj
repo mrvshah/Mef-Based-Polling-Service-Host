@@ -32,13 +32,34 @@
     <DocumentationFile>bin\Release\ProcessOrderService.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EcmaScript.NET.modified">
+      <HintPath>..\packages\YUICompressor.NET.1.6.0.2\lib\net35\EcmaScript.NET.modified.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.1.2.10\lib\2.0\log4net.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="Utilities, Version=3.3.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Utilities.3.3.0.3\lib\net40\Utilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Utilities.Common, Version=3.3.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\UtilitiesWeb.3.3.0.3\lib\net40\Utilities.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="UtilitiesWeb">
+      <HintPath>..\packages\UtilitiesWeb.3.3.0.3\lib\net40\UtilitiesWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Yahoo.Yui.Compressor">
+      <HintPath>..\packages\YUICompressor.NET.1.6.0.2\lib\net35\Yahoo.Yui.Compressor.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ProcessOrder.cs" />
@@ -46,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj">
